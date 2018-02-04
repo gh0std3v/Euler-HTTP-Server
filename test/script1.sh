@@ -11,7 +11,7 @@ cd - > /dev/null
 mkdir -p server_test_files/r00t
 
 echo "Root directory created."
-echo "Creating test files."
+echo "Creating test files..."
 
 touch server_test_files/r00t/index.html
 touch server_test_files/r00t/random.txt
@@ -21,20 +21,20 @@ echo "Created testing files."
 text=$(cat <<EOF 
 
 
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset='utf-8'></meta>
-		<title>Euler Server Test Page</title>
-	</head>
-
-	<body>
-		<div align='center'>
-			<h1>Euler Server</h1>
-			<p>This page is for testing.</p>
-		</div>
-	</body>
-</html>
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset='utf-8'></meta> 
+		<title>Euler Server Test Page</title> 
+	</head> 
+	 
+	<body> 
+		<div align='center'> 
+			<h1>Euler Server</h1> 
+			<p>This page is for testing.</p> 
+		</div> 
+	</body> 
+</html> 
 
 EOF
 )
