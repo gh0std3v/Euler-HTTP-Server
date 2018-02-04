@@ -1,5 +1,9 @@
 
+server:
 
-testf:
+	cc -g -Wall -o server server.c done_signal/done.c done_signal/done.h
+	./build_directory.sh build
+clean:
 
-	cc -g -Wall -o testr testr.c done_signal/done.c done_signal/done.h
+	rm -r server
+	./build_directory.sh destroy
